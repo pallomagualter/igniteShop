@@ -1,11 +1,16 @@
-import { Inter } from 'next/font/google'
+import { styled } from '../styles';
 
-const inter = Inter({ subsets: ['latin'] })
+const Button = styled('button', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundColor: '$primary'
+})
 
 export default function Home() {
   return (
     <>
-     <h1>Hi, Palloma!</h1>
+     <Button>Enviar</Button>
     </>
   )
 }
